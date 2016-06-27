@@ -1,0 +1,20 @@
+{
+  "name": "Facebook-API-Call",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-file-include": "^0.13.7",
+    "gulp-insert": "^0.5.0",
+    "gulp-load-plugins": "^1.2.0"
+  },
+  "dependencies": {
+    "gulp-uglify": "^1.5.4",
+    "handlebars": "^4.0.5"
+  }
+}

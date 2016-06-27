@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Facebook API Call</title>
+
+        <link rel="stylesheet" href="./css/style.css">
+
+        <script type="text/javascript" src="./js/main.min.js" async/>
+    </head>
+    <body>
+        <main>
+            <h1>Facebook API Call</h1>
+
+            <section class="calendar">
+                <h1>Calendar</h1>
+                <p>De evenementen worden ingeladen</p>
+
+                <ul class="eventList"></ul>
+
+            </section>
+
+            <script id="spinner" type="text/x-handlebars-template">
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+            </script>
+
+            <script id="calendar-template" type="text/x-handlebars-template">
+            		{{#each this}}
+            			<li class="calendar-list--item {{#if this.done}}past{{/if}}">
+            				<a href="{{link}}" target="_blank">
+            					<div class="date">
+            						<span class="month">{{date.monthName}}</span>
+            						<span class="day">{{date.day}}</span>
+            					</div>
+            					<div class="location">
+            						<h2 class="title">{{title}}</h2>
+            						<p class="detail">{{locationName}} / {{city}}</p>
+            					</div>
+            				</a>
+            			</li>
+            		{{/each}}
+
+            	<a href="" class="event-button">Bekijk alle evenementen</a>
+            </script>
+
+        </main>
+
+    </body>
+</html>
